@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+<body class="bg-indigo-100">
+
+    <div class="grid grid-cols:1 lg:grid-cols-2">
+        <div class="bg-gradient-to-b from-blue-500 to-green-400 lg:min-h-screen lg:flex lg:items-center p-8 sm:p-q12">
+            <div class="flex-grow">
+                <h1 class="text-white text-center text-2xl sm:text-5xl mb-2">
+                    Seja bem-vindo!
+                </h1>
+                <p class="text-center text-blue-200 sm:text-lg">
+                    Faça seu login para começar
+                </p>
+            </div>
+        </div>
+        <div class="lg:min-h-screen lg:flex lg:items-center p-12 lg:p-24 xl:p-48">
+            <div class="flex-grow bg-white shadow-xl rounded-md border border-gray-300 p-8">
+                <div class="sm:flex sm:items-center">
+                    <img 
+                        src="assets/images/image.jpeg" 
+                        alt="Person" 
+                        class="sm:flex-shrink-0 mx-auto sm:mx-0 h-24 rounded-full">
+                    
+                    <div class="sm:ml-4 sm:text-left text-center">
+                        <p class="text-xl">Adrian Wallman</p>
+                        <p class="text-sm text-gray-600">Gerente de Projetos</p>
+                        <div class="mt-4">
+                            <button 
+                                type="button" 
+                                class="btn-outlined-danger">
+                                Não é Adrian?
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+                <form class="flex w-full mt-8 form-inline">
+                    <input 
+                        type="password" 
+                        placeholder="Sua senha" 
+                        class="flex-1 w-full text-gray-700 bg-gray-200 rounded-md hover:bg-white border border-gray-200 outline-none focus:bg-white py-2 px-4" />
+                    
+                    <button 
+                        type="button" 
+                        class="flex-shrink-0 ml-4 btn-confirm">
+                        Entrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
